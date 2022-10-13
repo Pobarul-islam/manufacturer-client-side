@@ -18,6 +18,8 @@ const Navbar = () => {
         <li><Link to="/blogs">Blogs</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/contact">Message</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
 
         {
             user && <li><Link to="/dashboard">Dashboard</Link></li>
@@ -58,10 +60,10 @@ const Navbar = () => {
           <Link to="/" className=" normal-case text-xl flex ml-4 mt-3">
             <img
               className="w-20"
-              src="https://i.ibb.co/nD2ScvY/logo-1.jpg"
+              src="https://i.ibb.co/gTdKM3h/logo-1.png"
               alt=""
             />
-            <span className='ml-2 font-bold mt-5'>MNFT</span>
+            <span className="ml-2 font-bold mt-5">LTI</span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
