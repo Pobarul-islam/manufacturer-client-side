@@ -20,7 +20,7 @@ import NotFound from './Pages/Shared/NotFound';
 import AllProduct from './Pages/AllProduct/AllProduct';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Contact from './Pages/Contact';
+import Contact from './Pages/Shared/Contact';
 
 function App() {
   return (
