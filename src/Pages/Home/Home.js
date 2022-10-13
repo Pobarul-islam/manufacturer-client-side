@@ -12,7 +12,7 @@ import Footer from './Footer';
 import Impress from './Impress';
 import Info from './Info';
 import Success from './Success';
-import Summary from './Summary';
+
 import Visa from './Visa';
 
 
