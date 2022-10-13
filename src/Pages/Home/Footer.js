@@ -3,13 +3,13 @@ import React from 'react';
 
 const Footer = () => {
     return (
-      <footer class="px-4 divide-y mt-20 dark:bg-gray-800 dark:text-gray-100">
+      <footer class="px-4 divide-y mt-20 bg-base-300 dark:text-gray-100">
         <div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
           <div class="lg:w-1/3">
             <a
               rel="noopener noreferrer"
               href="#"
-              class="flex justify-center space-x-3 lg:justify-start"
+              className="flex justify-center space-x-3 lg:justify-start"
             >
               <div class="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
            

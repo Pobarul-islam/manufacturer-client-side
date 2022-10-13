@@ -2,36 +2,66 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div className='mt-16 mx-auto'>
-            <h1 className="text-center text-5xl">Contact Us</h1>
-            <form className="card w-full p-7 max-w-lg shadow-2xl mx-auto" >
-                <div className="form-control mt-3">
-                    <label className="label">
-                        <span className="label-text">Email</span>
-                    </label>
-                    <input
-                        className="input input-bordered" type='email' required />
-                </div>
-                <div className="form-control mt-3">
-                    <label className="label">
-                        <span className="label-text">Subject</span>
-                    </label>
-                    <input
-                        className="input input-bordered" type='text' required />
-                </div>
-                <div className="form-control mt-3">
-                    <label className="label">
-                        <span className="label-text">Message</span>
-                    </label>
-                    <textarea
-                        className="input input-bordered h-48" type='email'
-                        required
-                    />
-                </div>
-                <button className='btn mt-4'>Send Message</button>
-            </form>
+      <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-base-300 dark:text-gray-100">
+        <div className="flex flex-col justify-between">
+          <div className="space-y-2">
+            <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
+              Let's talk!
+            </h2>
+            <div className="dark:text-gray-400">
+              Vivamus in nisl metus? Phasellus.
+            </div>
+          </div>
+          <img
+            src="https://i.ibb.co/LYB7dPP/5124556.jpg"
+            alt=""
+            className="p-6 h-52 md:h-64"
+          />
         </div>
-    )
+        <form
+          novalidate=""
+          className="space-y-6 ng-untouched ng-pristine ng-valid"
+        >
+          <div>
+            <label for="name" className="text-sm">
+              Full name
+            </label>
+            <input
+              id="name"
+              type="text"
+              placeholder=""
+              className="w-full p-3 rounded dark:bg-gray-800"
+            />
+          </div>
+          <div>
+            <label for="email" className="text-sm">
+              Email
+            </label>
+            <input
+              id="email"
+              type="email"
+              className="w-full p-3 rounded dark:bg-gray-800"
+            />
+          </div>
+          <div>
+            <label for="message" className="text-sm">
+              Message
+            </label>
+            <textarea
+              id="message"
+              rows="3"
+              className="w-full p-3 rounded dark:bg-gray-800"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-violet-400 dark:text-gray-900"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    );
 }
 
 export default Contact

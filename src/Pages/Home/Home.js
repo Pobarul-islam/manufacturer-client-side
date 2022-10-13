@@ -7,6 +7,7 @@ import AutomatedTask from './AutomatedTask';
 
 import Banner from './Banner';
 import BoostProductivity from './BoostProductivity';
+import Faq from './Faq';
 import Fetures from './Fetures';
 import Footer from './Footer';
 import Impress from './Impress';
@@ -37,7 +38,8 @@ const Home = () => {
           </Link>
         </p>
        
-        <Reviews />
+            <Reviews />
+            <Faq/>
         <Footer></Footer>
       </div>
     );
