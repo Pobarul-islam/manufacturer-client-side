@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Products from '../Products/Products';
 import Reviews from '../Review/Reviews';
+import AutomatedTask from './AutomatedTask';
 
 
 import Banner from './Banner';
@@ -18,7 +19,8 @@ const Home = () => {
         <div className='px-12 w-full'>
 
             <Banner></Banner>
-            <BoostProductivity/>
+            <BoostProductivity />
+            <AutomatedTask/>
             <Info></Info>
             <Products></Products>
             <p className='text-center mt-10 '>
