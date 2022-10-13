@@ -21,6 +21,7 @@ import AllProduct from './Pages/AllProduct/AllProduct';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Contact from './Pages/Shared/Contact';
+import Chat from './Chat/Chat';
 
 function App() {
   return (
@@ -57,6 +58,11 @@ function App() {
         <Route path='/addproduct' element={
           <RequireAuth>
             <Addproduct></Addproduct>
+          </RequireAuth>
+        }></Route>
+        <Route path='/message' element={
+          <RequireAuth>
+           <Chat/>
           </RequireAuth>
         }></Route>
         <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
