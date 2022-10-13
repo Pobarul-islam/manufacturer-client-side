@@ -74,13 +74,25 @@ const Banner = () => {
                 >
                   {" "}
                   <SwiperSlide>
-                    <img src="https://i.ibb.co/h10hLPP/slide-1.jpg" alt="" />{" "}
+                    <img
+                 
+                      src="https://i.ibb.co/h10hLPP/slide-1.jpg"
+                      alt=""
+                    />{" "}
                   </SwiperSlide>{" "}
                   <SwiperSlide>
-                    <img src="https://i.ibb.co/kgDr0ZT/slide-2.jpg" alt="" />{" "}
+                    <img
+                     
+                      src="https://i.ibb.co/kgDr0ZT/slide-2.jpg"
+                      alt=""
+                    />{" "}
                   </SwiperSlide>{" "}
                   <SwiperSlide>
-                    <img src="https://i.ibb.co/s6cBPk3/slide-3.jpg" alt="" />{" "}
+                    <img
+                   
+                      src="https://i.ibb.co/s6cBPk3/slide-3.jpg"
+                      alt=""
+                    />{" "}
                   </SwiperSlide>
                 </Swiper>
               </>

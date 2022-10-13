@@ -5,6 +5,7 @@ import Reviews from '../Review/Reviews';
 
 
 import Banner from './Banner';
+import BoostProductivity from './BoostProductivity';
 import Footer from './Footer';
 import Info from './Info';
 import Summary from './Summary';
@@ -17,6 +18,7 @@ const Home = () => {
         <div className='px-12 w-full'>
 
             <Banner></Banner>
+            <BoostProductivity/>
             <Info></Info>
             <Products></Products>
             <p className='text-center mt-10 '>
