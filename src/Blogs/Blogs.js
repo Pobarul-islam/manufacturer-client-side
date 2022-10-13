@@ -2,82 +2,140 @@ import React from 'react'
 
 const Blog = () => {
     return (
-        <div className='container mx-auto my-14 grid grid-cols-1  md:w-full sm:w-full  p-10'>
-            <div className='card card-accent'>
-                <h1 className='text-3xl'>Improve the performance of a React Application</h1>
-                <p className='mt-5'>If you’re benchmarking or experiencing performance problems in your React apps, make sure you’re testing with the minified production build.</p>
-                <p className='mt-2'>
-                    By default, React includes many helpful warnings. These warnings are very useful in development. However, they make React larger and slower so you should make sure to use the production version when you deploy the app.
+      <div class="pt-12 flex flex-row flex-wrap md:justify-around bg-gray-200">
+        <div
+          class="flex items-center w-full sm:w-9/12 lg:w-1/3 lg:mb-12 bg-cover bg-no-repeat rounded-lg"
+          style={{
+            backgroundImage:
+              "url(" +
+              "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/04/mars_landscape/21916769-2-eng-GB/Mars_landscape_pillars.jpg" +
+              ")",
+            
+          }}
+        >
+          <div class="w-full rounded-lg bg-black opacity-75">
+            <div class="w-full bg-red-700 p-2">
+              <h4 class="font-bold text-1xl text-center text-white">
+                Today's Weather
+              </h4>
+            </div>
+            <p class="pt-2 pl-2 text-1xl font-semibold text-white">
+              Elon City, MARS
+            </p>
+            <p class="pl-2 text-1xl font-semibold text-white">
+              Mon May 23 2155 08:02:21 MT-0800 (Mars Standard Time)
+            </p>
+            <div class="m-4 pb-3 flex flex-row justify-between">
+              <div class="p-3 flex flex-col text-white">
+                <i class="fas fa-cloud-sun text-gray-200 pl-6 text-2xl font-semibold"></i>
+                <p class="text-lg font-medium">
+                  33<span>&#8457;</span>
                 </p>
-                <ol className='mt-4 list-decimal ml-5'>
-                    <li> Keeping component state local where necessary.</li>
-                    <li> Memoizing React components to prevent unnecessary re-renders.</li>
-                    <li> Code-splitting in React using dynamic import()</li>
-                    <li> Windowing or list virtualization in React.</li>
-                    <li> Lazy loading images in React.</li>
-                </ol>
-            </div>
-            <div>
-                <h1 className='text-3xl'>Improve the performance of a React Application</h1>
-                <p className='mt-2'>
-                    Every object with its methods and properties contains an internal and hidden property known as [[Prototype]]. The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. Traditionally, in order to get and set the [[Prototype]] of an object, we use Object.getPrototypeOf and Object.setPrototypeOf. Nowadays, in modern language, it is being set using __proto__
+                <p class="text-lg font-medium">High</p>
+              </div>
+              <div class="p-3 flex flex-col text-white">
+                <i class="fas fa-cloud text-gray-200 pl-6 text-2xl font-semibold"></i>
+                <p class="text-lg font-medium">
+                  -91<span>&#8457;</span>
                 </p>
-
+                <p class="text-lg font-medium">Low</p>
+              </div>
+              <div class="flex flex-col text-lg text-white font-medium">
+                <p>Feels like: 35&#8457;</p>
+                <p>Precipitation: 0%</p>
+                <p>Humidity: 0%</p>
+                <p>Wind: 5 MPH</p>
+              </div>
             </div>
-            <div>
-                <h1 className='text-3xl'>{`Why you do not set the state directly in React`}</h1>
-                <p className='mt-2'>
-                    {
-                        ` 
-        he state starts as { count: 0 }, and we increment state.count when the user clicks a button by calling this.setState(). We’ll use snippets from this class throughout the page.
-            `
-                    }
-                    <div className="mockup-code mt-4">
-                        <pre data-prefix="$"><code>
-
-                            {
-                                `
-        const [count, setCount] = useState(0)
-        //For Changer This Value of Count !
-          we Can Use setCount(4545)
-        Now value Of Count is 4545
-                `
-                            }
-                        </code></pre>
-                    </div>
-
-                </p>
-
-            </div>
-            <div>
-                <h1 className='text-2xl'>You have an array of products. Each product has a name, price, description, etc. How will you implement a search to find products by name?</h1>
-                <div className="mockup-code p-5 mt-4">
-                    <pre data-prefix="Ans"><code className='text-green-500'>
-                        {
-                            `
-    const Array = [
-    {name : "product1" , price : 5050},
-    {name : "product2" , price : 45650},
-    {name : "product3" , price : 4560},
-    {name : "product4" , price : 405650}
-    ]
-
-    Array.filter((val)=> {
-      if (searchFeildValue === "") {
-        return val
-      }
-      else if(val.name.toLowerCase().includes(searchValue.toLowerCase())){
-        return val
-      }
-    }).map(product => console.log(product))
-              `
-                        }
-                    </code></pre>
-                </div>
-
-            </div>
+          </div>
         </div>
-    )
+
+        <div class="flex-col mt-10">
+          <div class="w-full lg:max-w-lg border-b border-gray-800">
+            <h2 class="mb-6 text-2xl lg:text-3xl text-black font-serif font-medium text-center">
+              Latest News
+            </h2>
+            <div class="flex justify-evenly pl-3 py-3">
+              <div>
+                <img
+                  src="https://images.pexels.com/photos/9283/landscape-nature-sky-blue.jpg?cs=srgb&dl=pexels-skitterphoto-9283.jpg&fm=jpg"
+                  alt=""
+                  className="object-contain w-32 mr-2"
+                />
+              </div>
+              <div class="flex flex-col pl-2">
+                <p class="font-semibold text-xs md:text-sm">May 23rd, 2155</p>
+                <p class="w-64 text-md text-orange-600 font-bold hover:underline cursor-pointer break-words">
+                  Mars might be losing its classic red look thanks to more trees
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full lg:max-w-lg border-b border-gray-800">
+            <div class="flex justify-evenly pl-3 py-3">
+              <div>
+                <img
+                  src="https://images.pexels.com/photos/221012/pexels-photo-221012.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt=""
+                  className="object-contain w-32 mr-2"
+                />
+              </div>
+              <div class="flex flex-col pl-2">
+                <p class="font-semibold text-xs md:text-sm">May 22nd, 2155</p>
+                <p class="w-64 text-md text-orange-600 font-bold hover:underline cursor-pointer break-words">
+                  A newly discovered industrial pollutant is a possible threat
+                  to Elon City
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full lg:max-w-lg border-b border-gray-800">
+            <div class="flex justify-evenly pl-3 py-3">
+              <div>
+                <img
+                  src="https://images.pexels.com/photos/3273851/pexels-photo-3273851.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt=""
+                  className="object-contain w-32 mr-2"
+                />
+              </div>
+              <div class="flex flex-col pl-2">
+                <p class="font-semibold text-xs md:text-sm">May 19th, 2155</p>
+                <p class="w-64 text-md text-orange-600 font-bold hover:underline cursor-pointer break-words">
+                  Are children born on Mars considered Martians?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full lg:max-w-lg border-b border-gray-800">
+            <div class="flex justify-evenly pl-3 py-3">
+              <div>
+                <img
+                  src="https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt=""
+                  className="object-contain w-32 mr-2"
+                />
+              </div>
+              <div class="flex flex-col pl-2">
+                <p class="font-semibold text-xs md:text-sm">May 19th, 2155</p>
+                <p class="w-64 text-md text-orange-600 font-bold hover:underline cursor-pointer break-words">
+                  A recently proposed tax bill has garnered controversy for
+                  requiring Mars citizens to pay for air
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="ml-6 mt-8 mb-8 text-2xl font-serif font-medium hover:underline cursor-pointer">
+            <span>
+              More News<i class="fas fa-angle-right pt-1 ml-2"></i>
+            </span>
+          </h2>
+        </div>
+      </div>
+    );
 }
 
 export default Blog
