@@ -14,7 +14,7 @@ const Product = ({ product }) => {
         </figure>
         <div className="card-body items-center text-center text-stone-500">
           <h2 className="card-title font-bold  text-stone-500">
-            <span className="font-bold">Name: </span>{name}
+            <span className="font-bold">Name: </span> {name}
           </h2>
           <p>
             <span className="font-bold">Description: </span> {description}

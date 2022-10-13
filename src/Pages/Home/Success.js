@@ -2,7 +2,7 @@ import React from 'react';
 
 const Success = () => {
     return (
-      <div>
+      <div className='mt-10'>
         <section class="py-20 bg-gray-50">
           <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
             <div class="flex flex-wrap items-center -mx-3">
