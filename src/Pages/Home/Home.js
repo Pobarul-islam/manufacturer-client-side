@@ -22,14 +22,15 @@ import Visa from './Visa';
 const Home = () => {
     return (
       <div className="px-12 w-full">
-            <Banner></Banner>
-            <Visa/>
+        <Banner></Banner>
+        <Visa />
         <Info></Info>
+        <Success />
         <BoostProductivity />
         <AutomatedTask />
-            <Success />
-            <Impress />
-            <Fetures/>
+
+        <Impress />
+        <Fetures />
 
         <Products></Products>
         <p className="text-center mt-10 ">
@@ -37,9 +38,9 @@ const Home = () => {
             All Products
           </Link>
         </p>
-       
-            <Reviews />
-            <Faq/>
+
+        <Reviews />
+        <Faq />
         <Footer></Footer>
       </div>
     );
