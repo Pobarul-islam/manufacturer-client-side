@@ -6,10 +6,10 @@ const AllProductsCard = ({ allProduct }) => {
     return (
       
         <div class="card bg-base-100 shadow-xl">
-          <figure class="pt-10">
+          <figure>
             <img style={{ height: "8rem" }} src={img} alt="Shoes" />
           </figure>
-          <div class="card-body items-center text-center">
+          <div class="card-body">
             <h2 class="card-title">{name}</h2>
             <p>Description: {description}</p>
             <p>MinimumOrder: {MinimumOrder}</p>

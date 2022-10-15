@@ -9,9 +9,9 @@ const AllProduct = () => {
             .then(data => setAllProducts(data))
     }, [])
     return (
-      <div className="mt-5">
+      <div className="mt-5 p-3 bg-gray-200">
         <h2 className="text-5xl font-bold text-center">All Products</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ml-10 gap-y-10 mt-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mx-10 mt-10">
           {allProducts.map((allProduct) => (
             <AllProductsCard
               key={allProduct}
