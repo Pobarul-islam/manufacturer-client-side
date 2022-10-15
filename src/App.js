@@ -23,6 +23,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Contact from './Pages/Shared/Contact';
 import Chat from './Chat/Chat';
 import OurTeam from './Pages/OurTeam/OurTeam';
+import Fetures from './Pages/Features/Fetures';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/ourteam" element={<OurTeam />} />
+        <Route path="/features" element={<Fetures />} />
         <Route path="/allproduct" element={<AllProduct></AllProduct>}></Route>
 
         <Route
