@@ -8,13 +8,13 @@ const Product = ({ product }) => {
 
 
     return (
-      <div className="card bg-base-100 shadow-xl">
-        <figure className=" pt-10">
+      <div className="card bg-base-100 shadow-xl border-orange-400">
+        <figure className=" pt-10 border">
           <img style={{ height: "8rem" }} src={img} alt="Shoes" />
         </figure>
-        <div className="card-body items-center text-center text-stone-500">
-          <h2 className="card-title font-bold  text-stone-500">
-            <span className="font-bold">Name: </span> {name}
+        <div className="card-body bg-green-600 rounded-2xl text-gray-300">
+          <h2 className="card-title font-bold ">
+            <span className="font-bold"></span> {name}
           </h2>
           <p>
             <span className="font-bold">Description: </span> {description}

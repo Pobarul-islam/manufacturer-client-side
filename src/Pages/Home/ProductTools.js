@@ -13,12 +13,15 @@ const ProductTools = ({ tool }) => {
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>
                 <p>{description}</p>
-                <div className="card-actions justify-end">
-                    {/* <button onClick={handleOrder} className="btn btn-primary">Order Now</button> */}
-                </div>
+               
             </div>
         </div>
     );
 };
 
 export default ProductTools;
+
+
+
+
+
