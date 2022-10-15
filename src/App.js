@@ -15,7 +15,7 @@ import MyProfile from './Pages/DashBoard/MyProfile';
 import Blogs from './Blogs/Blogs';
 import Addproduct from './Pages/AddProduct/AddProduct';
 import AddProduct from './Pages/DashBoard/AddProduct';
-import Portfolio from './Pages/Portfolio/Portfolio';
+// import Portfolio from './Pages/Portfolio/Portfolio';
 import NotFound from './Pages/Shared/NotFound';
 import AllProduct from './Pages/AllProduct/AllProduct';
 import { ToastContainer } from 'react-toastify';
@@ -84,7 +84,7 @@ function App() {
             </RequireAuth>
           }
         ></Route>
-        <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
+        {/* <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route> */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
