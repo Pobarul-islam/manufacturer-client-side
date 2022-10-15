@@ -10,7 +10,7 @@ const AllProductsCard = ({ allProduct }) => {
             <img style={{ height: "8rem" }} src={img} alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">{name}</h2>
+            <h2 class="card-title text-black font-bold">{name}</h2>
             <p>Description: {description}</p>
             <p>MinimumOrder: {MinimumOrder}</p>
             <p> Available: {Available}</p>

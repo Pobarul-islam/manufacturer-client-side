@@ -22,6 +22,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Contact from './Pages/Shared/Contact';
 import Chat from './Chat/Chat';
+import OurTeam from './Pages/OurTeam/OurTeam';
 
 function App() {
   return (
@@ -30,47 +31,63 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path='/allproduct' element={<AllProduct></AllProduct>}></Route>
+        <Route path="/ourteam" element={<OurTeam />} />
+        <Route path="/allproduct" element={<AllProduct></AllProduct>}></Route>
 
-
-        <Route path='/purchase/:id' element={
-          <RequireAuth>
-            <Purchase></Purchase>
-          </RequireAuth>
-        }></Route>
-        <Route path='dashboard' element={
-
-          <RequireAuth>
-            <Dashboard></Dashboard>
-          </RequireAuth>
-
-        }>
-
-          <Route path='/dashboard/orders' element={<MyOrders></MyOrders>}></Route>
-          <Route path='/dashboard/review' element={<AddReview></AddReview>}></Route>
-          <Route path='/dashboard/profile' element={<MyProfile></MyProfile>}></Route>
-          <Route path='/dashboard/add-product' element={<AddProduct />}></Route>
+        <Route
+          path="/purchase/:id"
+          element={
+            <RequireAuth>
+              <Purchase></Purchase>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="dashboard"
+          element={
+            <RequireAuth>
+              <Dashboard></Dashboard>
+            </RequireAuth>
+          }
+        >
+          <Route
+            path="/dashboard/orders"
+            element={<MyOrders></MyOrders>}
+          ></Route>
+          <Route
+            path="/dashboard/review"
+            element={<AddReview></AddReview>}
+          ></Route>
+          <Route
+            path="/dashboard/profile"
+            element={<MyProfile></MyProfile>}
+          ></Route>
+          <Route path="/dashboard/add-product" element={<AddProduct />}></Route>
         </Route>
 
-        <Route path='/contact' element={<Contact />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
 
-        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
-        <Route path='/addproduct' element={
-          <RequireAuth>
-            <Addproduct></Addproduct>
-          </RequireAuth>
-        }></Route>
-        <Route path='/message' element={
-          <RequireAuth>
-           <Chat/>
-          </RequireAuth>
-        }></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+        <Route
+          path="/addproduct"
+          element={
+            <RequireAuth>
+              <Addproduct></Addproduct>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/message"
+          element={
+            <RequireAuth>
+              <Chat />
+            </RequireAuth>
+          }
+        ></Route>
         <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
         <Route path="/login" element={<Login />} />
-        <Route path='/signup' element={<SignUp></SignUp>}></Route>
-        <Route path='*' element={<NotFound></NotFound>}></Route>
-
-
+        <Route path="/signup" element={<SignUp></SignUp>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <ToastContainer />
     </div>
