@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "./Banner.css";
 
 // import required modules
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay } from "swiper";
 const Banner = () => {
   return (
     <div class="px-2 py-32 bg-white md:px-0">
@@ -74,26 +74,15 @@ const Banner = () => {
                 >
                   {" "}
                   <SwiperSlide>
-                    <img
-                 
-                      src="https://i.ibb.co/h10hLPP/slide-1.jpg"
-                      alt=""
-                    />{" "}
+                    <img src="https://i.ibb.co/h10hLPP/slide-1.jpg" alt="" />{" "}
                   </SwiperSlide>{" "}
                   <SwiperSlide>
-                    <img
-                     
-                      src="https://i.ibb.co/kgDr0ZT/slide-2.jpg"
-                      alt=""
-                    />{" "}
+                    <img src="https://i.ibb.co/kgDr0ZT/slide-2.jpg" alt="" />{" "}
                   </SwiperSlide>{" "}
                   <SwiperSlide>
-                    <img
-                   
-                      src="https://i.ibb.co/s6cBPk3/slide-3.jpg"
-                      alt=""
-                    />{" "}
+                    <img src="https://i.ibb.co/s6cBPk3/slide-3.jpg" alt="" />{" "}
                   </SwiperSlide>
+                 
                 </Swiper>
               </>
             </div>
@@ -109,28 +98,3 @@ export default Banner;
 // https://i.ibb.co/kgDr0ZT/slide-2.jpg
 // https://i.ibb.co/s6cBPk3/slide-3.jpg
 
-
-//  <Swiper
-  //  spaceBetween={30}
-  //  centeredSlides={true}
-  //  autoplay={{
-  //    delay: 2500,
-  //    disableOnInteraction: false,
-  //  }}
-//    pagination={{
-//      clickable: true,
-//    }}
-//    navigation={true}
-//    modules={[Autoplay]}
-//    className="mySwiper"
-//  >
-//    <SwiperSlide>
-//      <img src="https://i.ibb.co/h10hLPP/slide-1.jpg" alt="" />
-//    </SwiperSlide>
-//    <SwiperSlide>
-//      <img src="https://i.ibb.co/kgDr0ZT/slide-2.jpg" alt="" />
-//    </SwiperSlide>
-//    <SwiperSlide>
-//      <img src="https://i.ibb.co/s6cBPk3/slide-3.jpg" alt="" />
-//    </SwiperSlide>
-//  </Swiper>;

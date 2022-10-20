@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Order from './Order';
-import DetailsUser from './DetailsUser';
 
 
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -13,7 +12,6 @@ import auth from '../../firebase.init';
 const Purchase = () => {
 
     // userDetails
-    const [error, setError] = useState('')
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
     const [part, setPart] = useState({})
     const [user] = useAuthState(auth)
