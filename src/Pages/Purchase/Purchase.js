@@ -90,7 +90,7 @@ const Purchase = () => {
 
     return (
         <div className="flex grid lg:grid-cols-2 md:grid-cols-2 ">
-            <div className="hero py-14 items-start bg-base-200 ">
+            <div className="hero py-14 items-start ">
                 <div className="hero-content flex-col items-center">
                     <img src={products.img} className="max-w-lg rounded-lg shadow-2xl" alt='' />
                     <div className='text-center'>
