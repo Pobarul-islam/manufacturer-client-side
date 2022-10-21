@@ -2,9 +2,9 @@ import React from 'react'
 
 const About = () => {
     return (
-      <div className="container grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-5 mx-auto mt-10 card shadow-xl p-10">
-        <h1 className="text-4xl">About Us</h1>
-        <h2>National Tools Industries</h2>
+      <div className="container grid bg-gray-300 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-5 mx-auto mt-10 card shadow-xl p-10">
+        <h1 className="text-3xl font-bold">About Us</h1>
+        <h2 className="text-3xl font-bold">National Tools Industries</h2>
         <div>
           <img
             src="https://www.manufacturingtodayindia.com/cloud/2022/03/15/kHbwzTeY-Cutting-tools-1200x675.jpg"
@@ -25,11 +25,7 @@ const About = () => {
             brilliant and enthusiastic professionals fulfil the needs and
             necessities of the customers in an effectual way. Apart from, we
             also deliver these products at market leading prices. Our experts
-            carry rich experience and wide knowledge about the domain. Our
-            quality analysts check the products on different quality parameters
-            to assure flawless products from our end. The products are provided
-            in a timely manner with an aim to uphold cordial relation with them
-            hello world.
+            carry rich experience and wide knowledge about the domain.
           </p>
 
           <p>
@@ -50,13 +46,13 @@ const About = () => {
           </p>
         </div>
         <div>
-          <p>Vision</p>
+          <p className="text-3xl font-bold">Vision</p>
           <p className="my-3">
             A united, integrated, enlightened, passionate, empowered and
             liberated community of motorcyclists – basically a Republic of
             Bikers
           </p>
-          <p>Mission</p>
+          <p className="text-3xl font-bold">Mission</p>
           <p>
             To develop a community of passionate motorcycle users with a view to
           </p>
