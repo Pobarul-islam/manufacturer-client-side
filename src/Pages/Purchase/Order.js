@@ -27,7 +27,7 @@ const Order = ({ product, show, setShow }) => {
     const image = product.img;
     setError('');
     if (quantity >= product.Avaiable) {
-      fetch('http://localhost:5000/tools', {
+      fetch('https://liratools.onrender.com/tools', {
         method: 'Post',
         headers: {
           'content-type': 'application/json',

@@ -26,7 +26,7 @@ const PurchasePage = () => {
   }, [errors.quantity?.type, status]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/userdetails/${id}`)
+    fetch(`https://liratools.onrender.com/userdetails/${id}`)
       .then((res) => res.json())
       .then((data) => setPart(data));
   }, [id]);
@@ -41,7 +41,7 @@ const PurchasePage = () => {
       price: data.quantity * part.price,
     };
 
-    fetch('http://localhost:5000/tools', {
+    fetch('https://liratools.onrender.com/tools', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',

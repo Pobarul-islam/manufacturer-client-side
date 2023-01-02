@@ -4,7 +4,7 @@ import AllProductsCard from './AllProductsCard';
 const AllProduct = () => {
   const [allProducts, setAllProducts] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/tools')
+    fetch('https://liratools.onrender.com/tools')
       .then((res) => res.json())
       .then((data) => setAllProducts(data));
   }, []);

@@ -8,7 +8,7 @@ const Reviews = () => {
   const [, loading] = useAuthState(auth);
 
   const { isLoading, data } = useQuery(['reviews'], () =>
-    fetch('http://localhost:5000/review').then((res) => res.json())
+    fetch('https://liratools.onrender.com/review').then((res) => res.json())
   );
 
   if (isLoading || loading) {

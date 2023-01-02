@@ -28,7 +28,7 @@ const Purchase = () => {
   }, [errors.quantity?.type, status]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/tools/${id}`)
+    fetch(`https://liratools.onrender.com/tools/${id}`)
       .then((res) => res.json())
       .then((data) => setPart(data));
   }, [id]);
@@ -49,7 +49,7 @@ const Purchase = () => {
       parseInt(data.quantity) < products.Available &&
       parseInt(data.quantity) > products.MinimumOrder
     ) {
-      fetch('http://localhost:5000/order', {
+      fetch('https://liratools.onrender.com/order', {
         method: 'POST',
         headers: {
           'Content-type': 'application/json',
@@ -60,10 +60,10 @@ const Purchase = () => {
         .then((data) => {
           console.log(data);
 
-          toast.success(`Your order done!, ${part.name}`);
+          toast.success(`${part.name}, Order is done!`);
         });
     } else {
-      toast.error('Sorry ! this is not allowed');
+      toast.error('Sorry ! Please start with 46 products');
     }
   };
 
@@ -71,7 +71,7 @@ const Purchase = () => {
 
   const [products, setProducts] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/tools/${id}`)
+    fetch(`https://liratools.onrender.com/tools/${id}`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

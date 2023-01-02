@@ -40,7 +40,7 @@ const AddProduct = () => {
             description,
           };
           console.log(newProduct);
-          fetch('http://localhost:5000/tools', {
+          fetch('https://liratools.onrender.com/tools', {
             method: 'Post',
             headers: {
               'content-type': 'application/json',

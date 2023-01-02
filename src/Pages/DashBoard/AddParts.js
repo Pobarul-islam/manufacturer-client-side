@@ -36,7 +36,7 @@ const AddParts = () => {
             description: data.description,
           };
 
-          const url = `http://localhost:5000/tools/parts`;
+          const url = `https://liratools.onrender.com/tools/parts`;
           fetch(url, {
             method: 'POST',
             headers: {

@@ -37,7 +37,7 @@ In the project directory, you can run:
 # Live Site Link: https://endearing-crepe-b6f8b3.netlify.app/
 
 Runs the app in the development mode.\
-Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
+Open [https://liratools.onrender.com](https://liratools.onrender.com) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.

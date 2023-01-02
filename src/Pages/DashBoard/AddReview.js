@@ -16,7 +16,7 @@ const AddReview = () => {
   const onSubmit = async (data) => {
     const image = user.photoURL;
     const ratingData = { ...data, image };
-    fetch('http://localhost:5000/review', {
+    fetch('https://liratools.onrender.com/review', {
       method: 'post',
       headers: {
         'content-type': 'application/json',
