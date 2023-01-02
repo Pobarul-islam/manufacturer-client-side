@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Order from './Order';
-
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
-
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
@@ -19,7 +17,6 @@ const Purchase = () => {
   const [part, setPart] = useState({});
   const [user] = useAuthState(auth);
   const { id } = useParams();
-
   const [status, setStatus] = useState(false);
 
   useEffect(() => {
@@ -45,6 +42,7 @@ const Purchase = () => {
       quantity: data.quantity,
       price: parseInt(data.quantity) * part.price,
       image: products.img,
+      reset,
     };
 
     if (
@@ -61,11 +59,11 @@ const Purchase = () => {
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
-          reset();
+
           toast.success(`Your order done!, ${part.name}`);
         });
     } else {
-      alert('Amener Somossa ace');
+      toast.error('Sorry ! this is not allowed');
     }
   };
 
@@ -80,29 +78,25 @@ const Purchase = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="flex grid lg:grid-cols-2 md:grid-cols-2 ">
-      <div className="hero py-14 items-start ">
+    <div className=" grid lg:grid-cols-2 md:grid-cols-2 ">
+      <div className="mt-10  ">
         <div className="hero-content flex-col items-center">
-          <img
-            src={products.img}
-            className="max-w-lg rounded-lg shadow-2xl"
-            alt=""
-          />
-          <div className="text-center">
-            <h1 className="text-3xl font-bold">{products.name}</h1>
-            <p className="mt-5 font-bold text-neutral">
+          <img src={products.img} className="max-w-lg rounded-lg" alt="" />
+          <div className=" text-clip p-5">
+            <h1 className="text-3xl  font-bold">{products.name}</h1> <br />
+            <span className=" text-neutral">
               Price : ${products.PerPrice}
-            </p>
-            <p className="mt-5 font-bold text-neutral">
+            </span>{' '}
+            <br />
+            <span className=" text-neutral">
               Quantity : {products.Available} p
-            </p>
-            <p className="mt-5 font-bold text-neutral">
+            </span>{' '}
+            <br />
+            <span className="  text-neutral">
               Min Order : {products.MinimumOrder} p
-            </p>
-            <p className="py-3 px-10">{products.description}</p>
-            <button onClick={() => setShow(true)} className="btn btn-primary">
-              Order Now
-            </button>
+            </span>{' '}
+            <br />
+            <p className="">Description: {products.description}</p>
           </div>
         </div>
       </div>
@@ -110,7 +104,7 @@ const Purchase = () => {
 
       {/* Purchase From  */}
 
-      <div className=" bg-base-200 py-10">
+      <div className="  py-10">
         <div className="md:w-[70%] mx-auto p-3">
           <div className="md:gap-20 gap-5">
             <div className="card shadow-2xl border md:p-10 p-3">

@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 
 const AddProduct = () => {
-  const [error, setError] = useState('');
+  const [error] = useState('');
   const [loading, setLoading] = useState(false);
 
   const url = `https://api.imgbb.com/1/upload?key=098b5a6d3bedc12ff50d82e6088e405f`;
@@ -58,8 +58,7 @@ const AddProduct = () => {
   };
   return (
     <div className="">
-      <div className={`hero h-screen `}>
-        <button>Close</button>
+      <div>
         <div style={{ width: '100%' }} className="hero-content">
           <div className="card w-full max-w-md shadow-2xl bg-base-100">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">

@@ -1,4 +1,4 @@
-import { Rating } from '@mui/material';
+
 import React from 'react'
 const ReviewCard = ({ review }) => {
     return (
@@ -34,9 +34,9 @@ const ReviewCard = ({ review }) => {
           <div className="p-4 space-y-2 text-sm dark:text-gray-400">
             <p>
               {review?.review?.length > 25
-                ? review.review.slice(0, 50) + "...."
+                ? review.review.slice(0, 150) + "...."
                         : review.review}
-                    <span className='text-orange-400 ml-3'>...More</span>
+                   
             </p>
           </div>
         </div>
