@@ -13,6 +13,7 @@ import Footer from './Footer';
 import Impress from './Impress';
 import Info from './Info';
 import Success from './Success';
+import Tools from './Tools';
 
 import Visa from './Visa';
 
@@ -38,7 +39,6 @@ const Home = () => {
             All Products
           </Link>
         </p>
-
         <Reviews />
         <Faq />
         <Footer></Footer>
