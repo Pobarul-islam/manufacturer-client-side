@@ -24,6 +24,7 @@ import Contact from './Pages/Shared/Contact';
 import Chat from './Chat/Chat';
 import OurTeam from './Pages/OurTeam/OurTeam';
 import Fetures from './Pages/Features/Fetures';
+import Payment from './Pages/Payment/Payment';
 
 function App() {
   return (
@@ -86,6 +87,7 @@ function App() {
             </RequireAuth>
           }
         ></Route>
+        <Route path='/payment' element={<Payment/>}></Route>
         {/* <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route> */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp></SignUp>}></Route>

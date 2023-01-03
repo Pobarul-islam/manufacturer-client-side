@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const MyOrders = () => {
   const [orders, setOrders] = useState([]);
@@ -43,7 +44,7 @@ const MyOrders = () => {
                 <td>
                   <div className="avatar">
                     <div className="w-16 rounded-xl">
-                      <img src={order.image} />
+                      <img src={order.image} alt=""/>
                     </div>
                   </div>
                 </td>
@@ -52,7 +53,7 @@ const MyOrders = () => {
                 <td>{order.price}</td>
                 <td>{order.totalPrice}</td>
                 <td>
-                  <button className="btn mr-3 btn-primary">Pay</button>
+                  <Link to="/payment" className="btn mr-3 btn-primary">Pay</Link>
                   <button
                     onClick={() => deleteOrder(order._id)}
                     className="btn ml-2 btn-error"

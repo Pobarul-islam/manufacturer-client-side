@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const AllProductsCard = ({ allProduct }) => {
+  const id = useParams()
     const { name, description, img, MinimumOrder, Available, PerPrice  } = allProduct
     return (
       
@@ -16,7 +17,7 @@ const AllProductsCard = ({ allProduct }) => {
             <p> Available: {Available}</p>
             <p>PerPrice: {PerPrice}</p>
           <div class="card-actions">
-              <Link to="/purchase/:id" class="btn btn-primary">
+              <Link to={`/purchase/:${id}`} class="btn btn-primary">
                 Buy Now
               </Link>
             </div>
