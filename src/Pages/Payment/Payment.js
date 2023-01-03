@@ -1,9 +1,8 @@
-import React from 'react'
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 function Payment() {
   return (
     <div>
-      <div className="mt-20 min-h-screen">
+      <div className="mt-20">
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Payment Method</h1>
@@ -19,4 +18,4 @@ function Payment() {
   );
 }
 
-export default Payment
+export default Payment;
